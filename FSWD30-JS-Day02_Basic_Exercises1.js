@@ -7,10 +7,12 @@ message on screen as follows:
 You will be a job_title in location and married to partner's_name with number_children.*/
 
 function crystalGazer(children, partner, location, job) {
-	return "You will be a " + this.job + " in " + this.location + " and married to " + this.partner + " with " + this.children + " children.";
+	return(" Crystal Gazer" + "<br>" + "<br>" + "You will be an " + job + " in " + location + " and married to " + partner + " with " + children + " children.");
 }
 
-console.log (crystalGazer);
+document.getElementById("BE01").innerHTML = crystalGazer(3, "Louise", "Salzburg", "accountant");
+
+
 
 
 
